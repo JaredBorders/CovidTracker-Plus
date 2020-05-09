@@ -15,7 +15,10 @@ class DataManager: ObservableObject {
     @Published var allCountries: [CountryData] = []
     @Published var totalData: TotalData = testTotalData
     
-    init() { getLatestTotals(); getLatestCountries() }
+    init() {
+        getLatestTotals()
+        // getLatestCountries()
+    }
     
     func getLatestTotals() {
     

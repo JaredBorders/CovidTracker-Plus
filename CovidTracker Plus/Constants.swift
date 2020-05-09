@@ -16,7 +16,7 @@ struct K {
     static let url_total =
     "https://covid-19-data.p.rapidapi.com/totals?format=json"
     static let url_country =
-    "https://covid-19-data.p.rapidapi.com/country/all?format=undefined"
+    "https://covid-19-data.p.rapidapi.com/country/all?format=json"
     static let headers: HTTPHeaders = [
         "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
         "x-rapidapi-key": K.apiKey

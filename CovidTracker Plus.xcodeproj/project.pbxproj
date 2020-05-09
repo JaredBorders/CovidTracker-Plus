@@ -18,6 +18,8 @@
 		B8B70E042466553400C8F355 /* DataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70E032466553400C8F355 /* DataManger.swift */; };
 		B8B70E08246655FA00C8F355 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70E07246655FA00C8F355 /* Constants.swift */; };
 		B8B70E0A246657B800C8F355 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70E09246657B800C8F355 /* DataModel.swift */; };
+		B8B70E0C246662A700C8F355 /* RecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70E0B246662A700C8F355 /* RecentView.swift */; };
+		B8B70E0E24666A0F00C8F355 /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70E0D24666A0F00C8F355 /* ListHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		B8B70E032466553400C8F355 /* DataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManger.swift; sourceTree = "<group>"; };
 		B8B70E07246655FA00C8F355 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B8B70E09246657B800C8F355 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		B8B70E0B246662A700C8F355 /* RecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentView.swift; sourceTree = "<group>"; };
+		B8B70E0D24666A0F00C8F355 /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
 		CEF69A46637CCDD3BDBFCAE2 /* Pods_CovidTracker_Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidTracker_Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,7 +118,9 @@
 		B8B70E06246655DF00C8F355 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B8B70E0B246662A700C8F355 /* RecentView.swift */,
 				B81BF618246653B400044704 /* ContentView.swift */,
+				B8B70E0D24666A0F00C8F355 /* ListHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,11 +250,13 @@
 			files = (
 				B8B70E0A246657B800C8F355 /* DataModel.swift in Sources */,
 				B81BF612246653B400044704 /* AppDelegate.swift in Sources */,
+				B8B70E0E24666A0F00C8F355 /* ListHeaderView.swift in Sources */,
 				B81BF617246653B400044704 /* CovidTracker_Plus.xcdatamodeld in Sources */,
 				B81BF619246653B400044704 /* ContentView.swift in Sources */,
 				B8B70E042466553400C8F355 /* DataManger.swift in Sources */,
 				B81BF614246653B400044704 /* SceneDelegate.swift in Sources */,
 				B8B70E08246655FA00C8F355 /* Constants.swift in Sources */,
+				B8B70E0C246662A700C8F355 /* RecentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
