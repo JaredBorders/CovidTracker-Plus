@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		B81BF61B246653B600044704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81BF61A246653B600044704 /* Assets.xcassets */; };
 		B81BF61E246653B600044704 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81BF61D246653B600044704 /* Preview Assets.xcassets */; };
 		B81BF621246653B600044704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81BF61F246653B600044704 /* LaunchScreen.storyboard */; };
+		B8B70E042466553400C8F355 /* DataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70E032466553400C8F355 /* DataManger.swift */; };
+		B8B70E08246655FA00C8F355 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70E07246655FA00C8F355 /* Constants.swift */; };
+		B8B70E0A246657B800C8F355 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B70E09246657B800C8F355 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		B81BF61D246653B600044704 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B81BF620246653B600044704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B81BF622246653B600044704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B70E032466553400C8F355 /* DataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManger.swift; sourceTree = "<group>"; };
+		B8B70E07246655FA00C8F355 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B8B70E09246657B800C8F355 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		CEF69A46637CCDD3BDBFCAE2 /* Pods_CovidTracker_Plus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidTracker_Plus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,7 +56,6 @@
 				379AA256AA80A159B1A4AF39 /* Pods-CovidTracker Plus.debug.xcconfig */,
 				8B821FC3E208AB445914599D /* Pods-CovidTracker Plus.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,7 +82,9 @@
 			children = (
 				B81BF611246653B400044704 /* AppDelegate.swift */,
 				B81BF613246653B400044704 /* SceneDelegate.swift */,
-				B81BF618246653B400044704 /* ContentView.swift */,
+				B8B70E07246655FA00C8F355 /* Constants.swift */,
+				B8B70E05246655CB00C8F355 /* Model */,
+				B8B70E06246655DF00C8F355 /* View */,
 				B81BF61A246653B600044704 /* Assets.xcassets */,
 				B81BF61F246653B600044704 /* LaunchScreen.storyboard */,
 				B81BF622246653B600044704 /* Info.plist */,
@@ -93,6 +100,23 @@
 				B81BF61D246653B600044704 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8B70E05246655CB00C8F355 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8B70E032466553400C8F355 /* DataManger.swift */,
+				B8B70E09246657B800C8F355 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8B70E06246655DF00C8F355 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B81BF618246653B400044704 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EAC3EC001698637FC551587B /* Frameworks */ = {
@@ -218,10 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8B70E0A246657B800C8F355 /* DataModel.swift in Sources */,
 				B81BF612246653B400044704 /* AppDelegate.swift in Sources */,
 				B81BF617246653B400044704 /* CovidTracker_Plus.xcdatamodeld in Sources */,
 				B81BF619246653B400044704 /* ContentView.swift in Sources */,
+				B8B70E042466553400C8F355 /* DataManger.swift in Sources */,
 				B81BF614246653B400044704 /* SceneDelegate.swift in Sources */,
+				B8B70E08246655FA00C8F355 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
