@@ -19,7 +19,7 @@ struct CountryDataRowView: View {
                 .fontWeight(.bold)
                 .font(.subheadline)
                 .frame(width: 120, height: 40)
-                .foregroundColor(Color(.black))
+                .foregroundColor(Color("countryColor"))
             
             Spacer()
             
