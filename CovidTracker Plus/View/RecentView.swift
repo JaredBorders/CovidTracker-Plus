@@ -11,9 +11,44 @@ import SwiftUI
 struct RecentView: View {
     
     @ObservedObject var covidFetch = DataManager()
+    @State var searchText = ""
+    @State var i = 0
     
     var body: some View {
-        return Text("Confirmed: \(covidFetch.totalData.confirmed)")
+        NavigationView {
+            
+            VStack {
+                
+                TotalDataView(totalData: covidFetch.totalData)
+                
+                ListHeaderView()
+                
+                List {
+                    CountryDataRowView(countryData: testCountryData)
+                    CountryDataRowView(countryData: testCountryData)
+                    CountryDataRowView(countryData: testCountryData)
+                    CountryDataRowView(countryData: testCountryData)
+                    CountryDataRowView(countryData: testCountryData)
+                    CountryDataRowView(countryData: testCountryData)
+                    CountryDataRowView(countryData: testCountryData)
+                    CountryDataRowView(countryData: testCountryData)
+
+                    
+                    
+                    /*
+                     API ISSUES
+                    ForEach(covidFetch.allCountries.filter {
+                        self.searchText.isEmpty ? true : $0.country.lowercased().contains(self.searchText.lowercased())
+                    }, id: \.country) { countryData in
+                        
+                        CountryDataRowView(countryData: testCountryData)
+                        
+                    }
+                    */
+                }
+            }
+            .navigationBarTitle("Covid-19 Data", displayMode: .large)
+        }
     }
 }
 

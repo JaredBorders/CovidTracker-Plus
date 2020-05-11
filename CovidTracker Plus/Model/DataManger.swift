@@ -17,7 +17,7 @@ class DataManager: ObservableObject {
     
     init() {
         getLatestTotals()
-        // getLatestCountries()
+        // getLatestCountries()   API ISSUES
     }
     
     func getLatestTotals() {

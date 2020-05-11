@@ -48,4 +48,4 @@ struct CountryData {
 }
 
 let testTotalData = TotalData(confirmed: 0, recovered: 0, critical: 0, deaths: 0, lastChange: "", lastUpdate: "")
-let testCountryData = CountryData(country: "", confirmed: 0, recovered: 0, critical: 0, deaths: 0, longitude: 0, latitiude: 0, lastChange: "", lastUpdate: "")
+let testCountryData = CountryData(country: "United States", confirmed: 1237659, recovered: 10000, critical: 1234, deaths: 9000, longitude: 0, latitiude: 0, lastChange: "", lastUpdate: "")

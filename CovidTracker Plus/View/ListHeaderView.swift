@@ -10,14 +10,7 @@ import SwiftUI
 
 struct ListHeaderView: View {
     
-    
-    
-    
     var body: some View {
-        
-        
-        
-        
         
         HStack {
             Text("Country")
@@ -45,11 +38,7 @@ struct ListHeaderView: View {
                 .padding(.trailing, 15)
         }
         .background(Color.gray)
-        
-        
-        
-        
-        
+         
     }
 }
 
