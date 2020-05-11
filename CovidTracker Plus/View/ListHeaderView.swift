@@ -18,20 +18,26 @@ struct ListHeaderView: View {
                 .font(.subheadline)
                 .frame(width: 110, alignment: .leading)
                 .padding(.leading, 15)
+
             Spacer()
+            
             Text("Conf.")
                 .fontWeight(.bold)
                 .font(.subheadline)
                 .frame(height: 40)
                 .padding(.leading, 5)
+            
             Spacer()
+            
             Text("Death")
                 .fontWeight(.bold)
                 .font(.subheadline)
                 .frame(height: 40)
-                .padding(.leading, 15)
+                .padding(.leading, 5)
+            
             Spacer()
-            Text("Recovered")
+            
+            Text("Recoverd")
                 .fontWeight(.bold)
                 .font(.subheadline)
                 .frame(height: 40)

@@ -12,12 +12,16 @@ struct RecentView: View {
     
     @ObservedObject var covidFetch = DataManager()
     @State var searchText = ""
-    @State var i = 0
+    @State var isSearchVisible = false
     
     var body: some View {
         NavigationView {
             
             VStack {
+                
+                if isSearchVisible {
+                    SearchView(searchText: $searchText)
+                }
                 
                 TotalDataView(totalData: covidFetch.totalData)
                 
@@ -48,6 +52,20 @@ struct RecentView: View {
                 }
             }
             .navigationBarTitle("Covid-19 Data", displayMode: .large)
+            .navigationBarItems(trailing:
+                    
+                    Button(action: {
+                        
+                        self.isSearchVisible.toggle()
+                        
+                        if !self.isSearchVisible {
+                            self.searchText = ""
+                        }
+                        
+                    }, label: {
+                        Image(systemName: "magnifyingglass")
+                    })
+            )
         }
     }
 }

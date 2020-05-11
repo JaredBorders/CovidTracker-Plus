@@ -10,11 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var covidFetch = DataManager()
-    
     var body: some View {
-        
-        TabView(selection: /*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+
+        TabView {
             
             RecentView()
                 .tabItem {
@@ -23,8 +21,14 @@ struct ContentView: View {
             .tag(0)
             
             
+            MapContainerView()
+                .edgesIgnoringSafeArea(.vertical)
+                .tabItem {
+                    Tab(imageName: "map", text: "Map")
+            }
+            .tag(1)
         }
-        
+
     }
 }
 

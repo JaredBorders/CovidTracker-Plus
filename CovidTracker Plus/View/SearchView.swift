@@ -8,14 +8,26 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct SearchView: View {
+    
+    @Binding var searchText: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            
+            TextField("Country...", text: $searchText)
+                .padding()
+        }
+        .frame(height: 50)
+        .background(Color("cardBackgroundGray"))
     }
 }
 
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
-    }
-}
+//struct SearchView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SearchView()
+//    }
+//}

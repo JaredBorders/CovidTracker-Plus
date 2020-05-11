@@ -16,11 +16,11 @@ class DataManager: ObservableObject {
     @Published var totalData: TotalData = testTotalData
     
     init() {
-        getLatestTotals()
-        // getLatestCountries()   API ISSUES
+        getCurrentTotal()
+        getAllCountries()
     }
     
-    func getLatestTotals() {
+    func getCurrentTotal() {
     
         AF.request(K.url_total, headers: K.headers).responseJSON { response in
             
@@ -41,7 +41,7 @@ class DataManager: ObservableObject {
         }
     }
     
-    func getLatestCountries() {
+    func getAllCountries() {
         
         AF.request(K.url_country, headers: K.headers).responseJSON { response in
             
@@ -61,7 +61,7 @@ class DataManager: ObservableObject {
                     let lastChange = countryData["lastChange"] as? String ?? "unknown"
                     let lastUpdate = countryData["lastUpdate"] as? String ?? "unknown"
                     
-                    let newDataModel = CountryData(country: country, confirmed: confirmed, recovered: recovered, critical: critical, deaths: deaths, longitude: latitude, latitiude: longitude, lastChange: lastChange, lastUpdate: lastUpdate)
+                    let newDataModel = CountryData(country: country, confirmed: confirmed, recovered: recovered, critical: critical, deaths: deaths, longitude: longitude, latitude: latitude, lastChange: lastChange, lastUpdate: lastUpdate)
                     
                     self.allCountries.append(newDataModel)
                     
