@@ -22,12 +22,12 @@ struct CountryDetailView: View {
                     .padding(.top)
                 CountryDetailRow(number: countryData.critical.addCommas(), name: "Critical", color: .yellow)
                 CountryDetailRow(number: countryData.deaths.addCommas(), name: "Deaths", color: .red)
-                CountryDetailRow(number: String(format: "%.2f", countryData.fatalityRate), name: "Death%", color: .red)
+                CountryDetailRow(number: String(format: "%.2f", countryData.fatalityRate), name: "Fatality Rate", color: .red)
                 CountryDetailRow(number: countryData.recovered.addCommas(), name: "Recovered", color: .green)
-                CountryDetailRow(number: String(format: "%.2f", countryData.recoveryRate), name: "Recovered%", color: .green)
+                CountryDetailRow(number: String(format: "%.2f", countryData.recoveryRate), name: "% Recovery", color: .green)
                 
             }
-            .background(Color("cardBackgroundGray"))
+            .background(Color.gray)
             .cornerRadius(8)
             .padding()
             

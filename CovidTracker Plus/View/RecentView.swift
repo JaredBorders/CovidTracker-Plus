@@ -28,27 +28,15 @@ struct RecentView: View {
                 ListHeaderView()
                 
                 List {
-                    CountryDataRowView(countryData: testCountryData)
-                    CountryDataRowView(countryData: testCountryData)
-                    CountryDataRowView(countryData: testCountryData)
-                    CountryDataRowView(countryData: testCountryData)
-                    CountryDataRowView(countryData: testCountryData)
-                    CountryDataRowView(countryData: testCountryData)
-                    CountryDataRowView(countryData: testCountryData)
-                    CountryDataRowView(countryData: testCountryData)
 
-                    
-                    
-                    /*
-                     API ISSUES
                     ForEach(covidFetch.allCountries.filter {
                         self.searchText.isEmpty ? true : $0.country.lowercased().contains(self.searchText.lowercased())
                     }, id: \.country) { countryData in
-                        
-                        CountryDataRowView(countryData: testCountryData)
-                        
+                        NavigationLink(destination: CountryDetailView(countryData: countryData)) {
+                            
+                            CountryDataRowView(countryData: countryData)
+                        }
                     }
-                    */
                 }
             }
             .navigationBarTitle("Covid-19 Data", displayMode: .large)
