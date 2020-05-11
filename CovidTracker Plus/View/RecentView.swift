@@ -35,7 +35,6 @@ struct RecentView: View {
                         }
                     }
                 }
-                .listRowBackground(Color(.gray))
             }
             .navigationBarTitle("Covid-19 Data", displayMode: .large).foregroundColor(Color(red: 0.70, green: 0.75, blue: 0.76))
             .navigationBarItems(trailing:

@@ -21,8 +21,8 @@ struct TotalDataView: View {
             }
             HStack {
                 TotalDataCart(number: totalData.recovered.addCommas(), name: "Recovered")
-                TotalDataCart(number: String(format: "%.2f", totalData.recoveryRate), name: "% Recovery")
-                TotalDataCart(number: String(format: "%.2f", totalData.fatalityRate), name: "Fatality Rate")
+                TotalDataCart(number: "\(String(format: "%.2f", totalData.recoveryRate))%", name: "% Recovery")
+                TotalDataCart(number: "\(String(format: "%.2f", totalData.fatalityRate))%", name: "Fatality Rate")
             }
         }
         .frame(height: 170)

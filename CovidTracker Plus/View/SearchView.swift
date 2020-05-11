@@ -20,6 +20,7 @@ struct SearchView: View {
             
             TextField("Country...", text: $searchText)
                 .padding()
+                .foregroundColor(Color(.black))
         }
         .frame(height: 50)
         .background(K.myColor.lightGrey)

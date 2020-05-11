@@ -22,9 +22,9 @@ struct CountryDetailView: View {
                     .padding(.top)
                 CountryDetailRow(number: countryData.critical.addCommas(), name: "Critical", color: K.myColor.gold)
                 CountryDetailRow(number: countryData.deaths.addCommas(), name: "Deaths", color: K.myColor.redd)
-                CountryDetailRow(number: String(format: "%.2f", countryData.fatalityRate), name: "Fatality Rate", color: .red)
+                CountryDetailRow(number: "\(String(format: "%.2f", countryData.fatalityRate))%", name: "Fatality Rate", color: .red)
                 CountryDetailRow(number: countryData.recovered.addCommas(), name: "Recovered", color: .green)
-                CountryDetailRow(number: String(format: "%.2f", countryData.recoveryRate), name: "% Recovery", color: .green)
+                CountryDetailRow(number: "\(String(format: "%.2f", countryData.recoveryRate))%", name: "% Recovery", color: .green)
             }
             .background(K.myColor.lightGrey)
             .cornerRadius(8)
