@@ -16,32 +16,26 @@ struct CountryDataRowView: View {
         
         HStack {
             Text(countryData.country)
-                .fontWeight(.medium)
+                .fontWeight(.bold)
                 .font(.subheadline)
-                .lineLimit(2)
-                .frame(width: 110, alignment: .leading)
-
+                .frame(width: 120, height: 40)
+                .foregroundColor(Color(.black))
+            
             Spacer()
             
             Text(countryData.confirmed.addCommas())
+                .fontWeight(.bold)
                 .font(.subheadline)
-                .frame(height: 40)
-                .padding(.leading, 5)
+                .frame(width: 120, height: 40)
+                .foregroundColor(K.myColor.gold)
             
             Spacer()
             
             Text(countryData.deaths.addCommas())
-                .frame(width: 50, height: 40, alignment: .center)
+                .fontWeight(.bold)
                 .font(.subheadline)
-                .foregroundColor(.red)
-                .padding(.leading, 5)
-            
-            Spacer()
-            
-            Text(countryData.recovered.addCommas())
-                .frame(width: 50, height: 40, alignment: .center)
-                .font(.subheadline)
-                .foregroundColor(.green)
+                .frame(width: 120, height: 40)
+                .foregroundColor(K.myColor.redd)
         }
     }
 }

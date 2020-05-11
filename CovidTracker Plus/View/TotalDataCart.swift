@@ -21,14 +21,15 @@ struct TotalDataCart: View {
                 Text(self.number)
                     .font(.subheadline)
                     .padding(5)
-                    .foregroundColor(self.color)
+                    .foregroundColor(Color.black)
                 Text(self.name)
+                    .fontWeight(.bold)
                     .font(.subheadline)
                     .padding(5)
-                    .foregroundColor(self.color)
+                    .foregroundColor(Color.black)
             }
             .frame(width: geometry.size.width, height: 80, alignment: .center)
-            .background(Color.gray)
+            .background(K.myColor.lightGrey)
             .cornerRadius(15)
             
         }

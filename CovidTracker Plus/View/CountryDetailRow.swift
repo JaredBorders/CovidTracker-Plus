@@ -22,6 +22,7 @@ struct CountryDetailRow: View {
                 Text(self.name)
                     .font(.body)
                     .padding(5)
+                    .foregroundColor(color)
                 
                 Spacer()
                 
@@ -29,9 +30,9 @@ struct CountryDetailRow: View {
                     .font(.subheadline)
                     .padding(5)
                     .foregroundColor(color)
-
+                
             }
-
+            
             Divider()
         }
         .padding(.leading)

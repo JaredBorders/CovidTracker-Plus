@@ -14,37 +14,26 @@ struct ListHeaderView: View {
         
         HStack {
             Text("Country")
+                .foregroundColor(Color.black)
                 .fontWeight(.bold)
                 .font(.subheadline)
-                .frame(width: 110, alignment: .leading)
-                .padding(.leading, 15)
-
+                .frame(width: 120, height: 40)
+                .padding(.leading)
             Spacer()
-            
-            Text("Conf.")
+            Text("Confirmed")
+                .foregroundColor(Color.black)
                 .fontWeight(.bold)
+                .frame(width: 120, height: 40)
                 .font(.subheadline)
-                .frame(height: 40)
-                .padding(.leading, 5)
-            
             Spacer()
-            
-            Text("Death")
+            Text("Deaths")
+                .foregroundColor(Color.black)
                 .fontWeight(.bold)
                 .font(.subheadline)
-                .frame(height: 40)
-                .padding(.leading, 5)
-            
-            Spacer()
-            
-            Text("Recoverd")
-                .fontWeight(.bold)
-                .font(.subheadline)
-                .frame(height: 40)
-                .padding(.trailing, 15)
+                .frame(width: 120, height: 40)
+                .padding(.trailing)
         }
-        .background(Color.gray)
-         
+        .background(K.myColor.lightGrey)
     }
 }
 

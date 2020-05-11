@@ -16,7 +16,6 @@ struct RecentView: View {
     
     var body: some View {
         NavigationView {
-            
             VStack {
                 
                 if isSearchVisible {
@@ -28,7 +27,6 @@ struct RecentView: View {
                 ListHeaderView()
                 
                 List {
-
                     ForEach(covidFetch.allCountries.filter {
                         self.searchText.isEmpty ? true : $0.country.lowercased().contains(self.searchText.lowercased())
                     }, id: \.country) { countryData in
@@ -37,21 +35,22 @@ struct RecentView: View {
                         }
                     }
                 }
+                .listRowBackground(Color(.gray))
             }
-            .navigationBarTitle("Covid-19 Data", displayMode: .large)
+            .navigationBarTitle("Covid-19 Data", displayMode: .large).foregroundColor(Color(red: 0.70, green: 0.75, blue: 0.76))
             .navigationBarItems(trailing:
+                
+                Button(action: {
                     
-                    Button(action: {
-                        
-                        self.isSearchVisible.toggle()
-                        
-                        if !self.isSearchVisible {
-                            self.searchText = ""
-                        }
-                        
-                    }, label: {
-                        Image(systemName: "magnifyingglass")
-                    })
+                    self.isSearchVisible.toggle()
+                    
+                    if !self.isSearchVisible {
+                        self.searchText = ""
+                    }
+                    
+                }, label: {
+                    Image(systemName: "magnifyingglass")
+                })
             )
         }
     }

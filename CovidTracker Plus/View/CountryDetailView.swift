@@ -18,20 +18,17 @@ struct CountryDetailView: View {
         
         VStack {
             VStack {
-                CountryDetailRow(number: countryData.confirmed.addCommas(), name: "Confirmed")
+                CountryDetailRow(number: countryData.confirmed.addCommas(), name: "Confirmed", color: K.myColor.gold)
                     .padding(.top)
-                CountryDetailRow(number: countryData.critical.addCommas(), name: "Critical", color: .yellow)
-                CountryDetailRow(number: countryData.deaths.addCommas(), name: "Deaths", color: .red)
+                CountryDetailRow(number: countryData.critical.addCommas(), name: "Critical", color: K.myColor.gold)
+                CountryDetailRow(number: countryData.deaths.addCommas(), name: "Deaths", color: K.myColor.redd)
                 CountryDetailRow(number: String(format: "%.2f", countryData.fatalityRate), name: "Fatality Rate", color: .red)
                 CountryDetailRow(number: countryData.recovered.addCommas(), name: "Recovered", color: .green)
                 CountryDetailRow(number: String(format: "%.2f", countryData.recoveryRate), name: "% Recovery", color: .green)
-                
             }
-            .background(Color.gray)
+            .background(K.myColor.lightGrey)
             .cornerRadius(8)
             .padding()
-            
-            
             Spacer()
         }
         .padding(.top, 50)

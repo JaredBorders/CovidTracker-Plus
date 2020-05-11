@@ -15,14 +15,14 @@ struct TotalDataView: View {
     var body: some View {
         VStack {
             HStack {
-                TotalDataCart(number: totalData.confirmed.addCommas(), name: "Confirmed", color: .black)
-                TotalDataCart(number: totalData.critical.addCommas(), name: "Critical", color: .black)
-                TotalDataCart(number: totalData.deaths.addCommas(), name: "Deaths", color: .black)
+                TotalDataCart(number: totalData.confirmed.addCommas(), name: "Confirmed")
+                TotalDataCart(number: totalData.critical.addCommas(), name: "Critical")
+                TotalDataCart(number: totalData.deaths.addCommas(), name: "Deaths")
             }
             HStack {
-                TotalDataCart(number: totalData.recovered.addCommas(), name: "Recovered", color: .black)
-                TotalDataCart(number: String(format: "%.2f", totalData.recoveryRate), name: "% Recovery", color: .black)
-                TotalDataCart(number: String(format: "%.2f", totalData.fatalityRate), name: "Fatality Rate", color: .black)
+                TotalDataCart(number: totalData.recovered.addCommas(), name: "Recovered")
+                TotalDataCart(number: String(format: "%.2f", totalData.recoveryRate), name: "% Recovery")
+                TotalDataCart(number: String(format: "%.2f", totalData.fatalityRate), name: "Fatality Rate")
             }
         }
         .frame(height: 170)

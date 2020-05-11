@@ -10,7 +10,6 @@ import SwiftUI
 import UIKit
 import MapKit
 
-
 struct MapView: UIViewRepresentable {
     
     @Binding var countryData: [CountryData]
@@ -28,7 +27,6 @@ struct MapView: UIViewRepresentable {
             allAnnotations.append(CoronaCaseAnnotation(title: title, coordinate: coordinate))
         }
         
-        
         uiView.annotations.forEach {
             uiView.removeAnnotation($0)
         }
@@ -40,7 +38,6 @@ struct MapView: UIViewRepresentable {
     }
 
 }
-
 
 class CoronaCaseAnnotation: NSObject, MKAnnotation {
     

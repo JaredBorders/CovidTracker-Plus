@@ -22,7 +22,7 @@ struct SearchView: View {
                 .padding()
         }
         .frame(height: 50)
-        .background(Color("cardBackgroundGray"))
+        .background(K.myColor.lightGrey)
     }
 }
 
