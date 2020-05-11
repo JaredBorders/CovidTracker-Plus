@@ -29,7 +29,9 @@ struct MapView: UIViewRepresentable {
         }
         
         
-        uiView.annotations.forEach { uiView.removeAnnotation($0) }
+        uiView.annotations.forEach {
+            uiView.removeAnnotation($0)
+        }
         uiView.addAnnotations(allAnnotations)
     }
     

@@ -12,7 +12,9 @@ import Alamofire
 struct K {
     
     static let apiKey =
-    "283e799f0cmsh3b8c07eea7055dbp15757ajsncb0ac8c01289"
+    "d172e810e7msh47584ae043c146dp12d8eejsnb0b3c42c4a59" // Public
+    //"283e799f0cmsh3b8c07eea7055dbp15757ajsncb0ac8c01289" Personal
+    
     static let url_total =
     "https://covid-19-data.p.rapidapi.com/totals?format=json"
     static let url_country =

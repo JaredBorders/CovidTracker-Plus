@@ -160,8 +160,8 @@
 				B8B70E0F24666CC600C8F355 /* CountryDataRowView.swift */,
 				B8653B542468FC94003C9D99 /* CountryDetailRow.swift */,
 				B8653B5824690118003C9D99 /* CountryDetailView.swift */,
-				B8653B5A246901DD003C9D99 /* MapContainerView.swift */,
 				B8653B562468FCAA003C9D99 /* MapView.swift */,
+				B8653B5A246901DD003C9D99 /* MapContainerView.swift */,
 				B8B70E0B246662A700C8F355 /* RecentView.swift */,
 				B81BF618246653B400044704 /* ContentView.swift */,
 			);
