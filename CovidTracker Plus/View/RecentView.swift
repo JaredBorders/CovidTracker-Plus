@@ -20,9 +20,11 @@ struct RecentView: View {
                 
                 if isSearchVisible {
                     SearchView(searchText: $searchText)
+                    .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
                 }
                 
                 TotalDataView(totalData: covidFetch.totalData)
+                .frame(width: UIScreen.main.bounds.width-20, alignment: .center)
                 
                 ListHeaderView()
                 
