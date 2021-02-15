@@ -7,7 +7,7 @@ CovidTracker-Plus is an iOS app that provides the user with current covid-19 dat
 ## Motivation
 CovidTracker-Plus was built for personal use so I could quickly and easily see what the statistics are for Covid-19. It also provided experience building iOS apps with SwiftUI.
 
-## Tech/framework used
+## Technologies
 * SwiftUI <br />
 * MapKit <br />
 * [Alamofire](https://github.com/Alamofire/Alamofire) <br />
