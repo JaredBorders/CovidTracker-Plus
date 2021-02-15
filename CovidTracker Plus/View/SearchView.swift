@@ -27,9 +27,3 @@ struct SearchView: View {
         .background(K.myColor.lightGrey)
     }
 }
-
-//struct SearchView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SearchView()
-//    }
-//}
