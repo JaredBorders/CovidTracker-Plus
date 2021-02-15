@@ -10,8 +10,8 @@ CovidTracker-Plus was built for personal use so I could quickly and easily see w
 ## Tech/framework used
 SwiftUI <br />
 MapKit <br />
-Alamofire <br />
-SwiftyJSON
+[Alamofire](https://github.com/Alamofire/Alamofire) <br />
+[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) <br />
 
 ## Features
 See Covid-19 stats by searching or scrolling through listed countires or by viewing the pinned locations on the provided map with country specific data.
