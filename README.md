@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/mockup/AppIcon.png?raw=true" width="200" height="200" alt="Covid Details Screen"/>
+</p>
 # CovidTracker-Plus
 CovidTracker-Plus is an iOS app that provides the user with current covid-19 data on countries around the world via information provided by rapidAPI.
 
