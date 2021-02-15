@@ -17,4 +17,11 @@ See Covid-19 stats by searching or scrolling through listed countires or by view
 Download newest version of Xcode from the app store and add your api key from RapidAPI to the apiKey property of the Constants.swift file
 
 ## Demo
-Coming Soon!!!
+<p align="center">
+  <img src="/mockup/home-dark.png?raw=true" width="100" height="100" alt="Covid Details Screen"/>
+  <img src="/mockup/home-light.png?raw=true" width="100" height="100" alt="Covid Details Screen"/>
+  <img src="/mockup/details.dark.png?raw=true" width="100" height="100" alt="Covid Details Screen"/>
+  <img src="/mockup/details.light.png?raw=true" width="100" height="100" alt="Covid Details Screen"/>
+  <img src="/mockup/map-light.png?raw=true" width="100" height="100" alt="Covid Details Screen"/>
+  <img src="/mockup/search-light.png?raw=true" width="100" height="100" alt="Covid Details Screen"/>
+</p>
