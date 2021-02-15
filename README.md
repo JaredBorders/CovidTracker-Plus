@@ -17,7 +17,7 @@ SwiftyJSON
 See Covid-19 stats by searching or scrolling through listed countires or by viewing the pinned locations on the provided map with country specific data.
 
 ## Installation
-Download newest version of Xcode from the app store and add your api key from RapidAPI to the apiKey property of the Constants.swift file
+To use the SwiftUI design canvas Xcode 11 must running on macOS Catalina. Add your api key from RapidAPI to the apiKey property of the Constants.swift file.
 
 ## Demo
 
