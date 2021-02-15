@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/mockup/AppIcon.png?raw=true" width="200" height="200" alt="Covid Details Screen"/>
+  <img src="/mockup/AppIcon.png?raw=true" width="100" height="100" alt="CovidTracker-Plus App Icon"/>
 </p>
 # CovidTracker-Plus
 CovidTracker-Plus is an iOS app that provides the user with current covid-19 data on countries around the world via information provided by rapidAPI.
@@ -23,14 +23,14 @@ Download newest version of Xcode from the app store and add your api key from Ra
 
 ### Home & Search
 <p align="center">
-  <img src="/mockup/home-dark.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
-  <img src="/mockup/home-light.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
-  <img src="/mockup/search-light.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
+  <img src="/mockup/home-dark.png?raw=true" width="300" height="300" alt="Home Screen Dark"/>
+  <img src="/mockup/home-light.png?raw=true" width="300" height="300" alt="Home Screen Light"/>
+  <img src="/mockup/search-light.png?raw=true" width="300" height="300" alt="Search Screen Light"/>
 </p>
 
 ### Details & Map
 <p align="center">
-  <img src="/mockup/details.dark.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
-  <img src="/mockup/details.light.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
-  <img src="/mockup/map-light.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
+  <img src="/mockup/details.dark.png?raw=true" width="300" height="300" alt="Covid Details Screen Dark"/>
+  <img src="/mockup/details.light.png?raw=true" width="300" height="300" alt="Covid Details Screen Light"/>
+  <img src="/mockup/map-light.png?raw=true" width="300" height="300" alt="Covid Details Map Screen Light"/>
 </p>
