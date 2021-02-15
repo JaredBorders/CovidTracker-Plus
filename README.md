@@ -18,24 +18,16 @@ Download newest version of Xcode from the app store and add your api key from Ra
 
 # Demo
 
-### Home Screen
+### Home & Search
 <p align="center">
   <img src="/mockup/home-dark.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
   <img src="/mockup/home-light.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
+  <img src="/mockup/search-light.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
 </p>
 
-### Details Screen
+### Details & Map
 <p align="center">
   <img src="/mockup/details.dark.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
   <img src="/mockup/details.light.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
-</p>
-
-### Map Screen
-<p align="center">
   <img src="/mockup/map-light.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
-</p>
-
-### Search Screen
-<p align="center">
-  <img src="/mockup/search-light.png?raw=true" width="300" height="300" alt="Covid Details Screen"/>
 </p>
