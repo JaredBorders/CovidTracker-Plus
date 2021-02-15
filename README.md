@@ -25,11 +25,11 @@ To use the SwiftUI design canvas Xcode 11 must running on macOS Catalina. Add yo
 <p align="center">
   <img src="/mockup/home-dark.png?raw=true" width="300" height="300" alt="Home Screen Dark"/>
   <img src="/mockup/home-light.png?raw=true" width="300" height="300" alt="Home Screen Light"/>
-  <img src="/mockup/search-light.png?raw=true" width="300" height="300" alt="Search Screen Light"/>
 </p>
 
-### Search
+### Map & Search
 <p align="center">
+  <img src="/mockup/map-light.png?raw=true" width="300" height="300" alt="Covid Details Map Screen Light"/>
   <img src="/mockup/search-light.png?raw=true" width="300" height="300" alt="Search Screen Light"/>
 </p>
 
@@ -37,10 +37,4 @@ To use the SwiftUI design canvas Xcode 11 must running on macOS Catalina. Add yo
 <p align="center">
   <img src="/mockup/details.dark.png?raw=true" width="300" height="300" alt="Covid Details Screen Dark"/>
   <img src="/mockup/details.light.png?raw=true" width="300" height="300" alt="Covid Details Screen Light"/>
-  <img src="/mockup/map-light.png?raw=true" width="300" height="300" alt="Covid Details Map Screen Light"/>
-</p>
-
-### Map
-<p align="center">
-  <img src="/mockup/map-light.png?raw=true" width="300" height="300" alt="Covid Details Map Screen Light"/>
 </p>
